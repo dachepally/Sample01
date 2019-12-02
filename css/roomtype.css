@@ -16,7 +16,7 @@ a.btn.btn-primary {
 
 a.btn.btn-primary:focus, a.btn.btn-primary:hover{
     outline:none;
-    background: #b10d48;
+    background: #191970;
 }
 
 small.text-muted.card_price {
