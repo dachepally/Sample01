@@ -24,7 +24,7 @@
   })();
 
   $('#myModal').on('hide.bs.modal', function (e) {
-        //window.location.href = "https://github.com/dachepally/Sample01/index.html";
-        window.location.href = "https://gangadhar993.github.io/DreamSpot/register.html";
+        window.location.href = "https://github.com/dachepally/Sample01/index.html";
+       // window.location.href = "https://github.com/dachepally/Sample01/register.html";
     
   });
