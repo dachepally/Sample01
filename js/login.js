@@ -30,14 +30,13 @@
         //window.location.href = "https://github.com/dachepally/Sample01/blob/master/admin.html";
     }
     else{
-        window.location.href = "https://github.com/dachepally/Sample01/user.html";
-        //window.location.href = "https://github.com/dachepally/Sample01/blob/master/admin.html";
+        window.location.href = "https://dachepally.github.io/Sample01/user.html";
+        
     }
-    
   });
 
   function goToRegister(){
-    window.location.href = "https://github.com/dachepally/Sample01/register.html";
-    //window.location.href = "https://github.com/dachepally/Sample01/blob/master/admin.html";
+    window.location.href = "https://dachepally.github.io/Sample01/register.html";
+    
   }
 
