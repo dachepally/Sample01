@@ -27,7 +27,7 @@
     var formsElements = document.getElementsByClassName('tab-pane fade show active text-align form-new');
     if(formsElements[0].id == "admin"){
         window.location.href = "https://github.com/dachepally/Sample01/admin.html";
-        //window.location.href = "https://github.com/dachepally/Sample01/blob/master/admin.html";
+        
     }
     else{
         window.location.href = "https://dachepally.github.io/Sample01/user.html";
