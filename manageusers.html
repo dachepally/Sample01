@@ -4,21 +4,22 @@
       <meta charset="utf-8">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title >Manage Users</title>
+      <title >ManageUsers</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/Footer-with-logo.css">
       <link rel="stylesheet" href="css/common.css">
-      <link rel="stylesheet" href="css/list.css">
-      <link rel="stylesheet" href="css/modal_success.css">
+      <link rel="stylesheet" href="css/admin.css">
+     
+  
+  
+  <link rel="stylesheet" href="css/user.css">
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
       <style>
-          h6.joined {
-            display: inline-block;
-            width: 72%;
-            vertical-align: middle;
-        }
-
         .img_Section {
             display: inline-block;
             vertical-align: middle;
@@ -28,43 +29,40 @@
             width: 35px;
             vertical-align: middle;
         }
-        
-          button.btn.btn-primary {
-              background: #d82e2e;
-              border: 1px solid #d82e2e;
-          }
-
-          .container {
-              margin-top: 30px;
-          }
+         
       </style>
       <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <script src="js/manageusers.js"></script>
-
+      <script>
+          function goToPage(pageName){
+            window.location.href = "https://dachepally.github.io/Sample01/"+pageName+".html?";
+          }
+      </script>
    </head>
    <body>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="admin.html">DreamSpot</a>
+                <a class="navbar-brand" href="admin.html">CarRental</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="admin.html">Home</a>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">Home </a>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link" href="manageusers.html">Manage Users<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="manageusers.html">Manage Users</a>
                     </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="paymentdelete.html">Manage Payments <span class="sr-only">(current)</span></a>
+                      </li>
                     <li class="nav-item">
-                            <a class="nav-link " href="managebookings.html">Manage Bookings</a>
+                            <a class="nav-link " href="managebookings.html">Manage Cars</a>
                       
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="managerooms.html">Room Availability</a>
+                      <a class="nav-link " href="managerooms.html">Manage Advertisement</a>
                     </li>
                   </ul>
                   
@@ -80,65 +78,77 @@
                                             <h4 class="head_text">Manage Users</h4>
                                         </div>
                                         <div class="gaadiex-list">
-                                            <div class="gaadiex-list-item" id="id1"><img class="gaadiex-list-item-img" src="images/icons8-user-60.png" alt="List user">
+                                            <div class="gaadiex-list-item" id="id1">
                                               <div class="gaadiex-list-item-text">
                                                 <h5>Name : Durga Prasad</h5>
                                                 <h6>Email : durgaprasad@gmail.com</h6>
                                                 <h6>Phone : +166055280298</h6>
                                                 <div class="date_Section">
-                                                        <h6 class="joined"> Requested</h6>
+                                                    <div class="img_Section" onclick="openModal('id1')">
+                                                        <img class="img_item" src="images/accept1.jpg" alt="Delete"/>
+                                                        <h6 class="delete">Accept</h6>
+                                                    </div>
+                                                    
+          
                                                         <div class="img_Section" onclick="openModal('id1')">
-                                                            
+                                                            <img class="img_item" src="images/delete.png" alt="Delete"/>
                                                             <h6 class="delete">Delete</h6>
-                                                        </div>
-                                                        
-                                                </div>        
+                                                        </div>    
                                               </div>
                                             </div>
-                                            <div class="gaadiex-list-item" id="id2"><img class="gaadiex-list-item-img" src="images/icons8-user-60.png" alt="List user">
+                                            <div class="gaadiex-list-item" id="id2">
                                               <div class="gaadiex-list-item-text">
-                                                <h5>Name : Sai Mohan </h5>
-                                                <h6>Email : saimohan@gmail.com</h6>
-                                                <h6>Phone : +16605280385</h6>
+                                                <h5>Name : VamseeKrishna</h5>
+                                                <h6>Email : vamseekrishna@gmail.com</h6>
+                                                <h6>Phone : +16605280298</h6>
                                                 <div class="date_Section">
-                                                        <h6 class="joined"> Joined Date - 02/19/2019</h6>
-                                                        <div class="img_Section" onclick="openModal('id2')">
+                                                    <div class="img_Section" onclick="openModal('id1')">
+                                                        <img class="img_item" src="images/accept1.jpg" alt="Delete"/>
+                                                        <h6 class="delete">Accept</h6>
+                                                    </div>
+                                                    
+          
+                                                        <div class="img_Section" onclick="openModal('id1')">
                                                             <img class="img_item" src="images/delete.png" alt="Delete"/>
                                                             <h6 class="delete">Delete</h6>
                                                         </div>
-                                                        
-                                                </div> 
                                               </div>
                                             </div>
-                                            <div class="gaadiex-list-item" id="id3"><img class="gaadiex-list-item-img" src="images/icons8-user-60.png" alt="List user">
+                                            <div class="gaadiex-list-item" id="id3">
                                               <div class="gaadiex-list-item-text">
-                                                <h5>Name : Divya Harshini</h5>
-                                                <h6>Email : Divyaharshini@gmail.com</h6>
-                                                <h6>Phone : +16605280425</h6>
+                                                <h5>Name : Ravi Varma Devarpally</h5>
+                                                <h6>Email : ravivarma@gmail.com</h6>
+                                                <h6>Phone : +16605280000</h6>
                                                 <div class="date_Section">
-                                                        <h6 class="joined"> Joined Date - 12/13/2018</h6>
-                                                        <div class="img_Section"  onclick="openModal('id3')">
+                                                    <div class="img_Section" onclick="openModal('id1')">
+                                                        <img class="img_item" src="images/accept1.jpg" alt="Delete"/>
+                                                        <h6 class="delete">Accept</h6>
+                                                    </div>
+                                                    
+          
+                                                        <div class="img_Section" onclick="openModal('id1')">
                                                             <img class="img_item" src="images/delete.png" alt="Delete"/>
                                                             <h6 class="delete">Delete</h6>
                                                         </div>
-                                                        
-                                                </div> 
                                               </div>
                                             </div>
-                                            <div class="gaadiex-list-item" id="id4"><img class="gaadiex-list-item-img" src="images/icons8-user-60.png" alt="List user">
+                                            <div class="gaadiex-list-item" id="id4">
                                               <div class="gaadiex-list-item-text">
-                                                <h5>Name :Uma Mahesh</h5>
-                                                <h6>Email : umamahesh@gmail.com</h6>
+                                                <h5>Name :Sai Sri</h5>
+                                                <h6>Email : saisri@gmail.com</h6>
                                                 <h6>Phone : +16605298763</h6>
                                                 <div class="date_Section">
-                                                        <h6 class="joined"> Joined Date - 01/11/2019</h6>
-                                                        <div class="img_Section"  onclick="openModal('id4')">
-                                                            <img class="img_item" src="images/delete.png" alt="Delete"/>
-                                                            <h6 class="delete">Delete</h6>
+                                                    <div class="date_Section">
+                                                        <div class="img_Section" onclick="openModal('id1')">
+                                                            <img class="img_item" src="images/accept1.jpg" alt="Delete"/>
+                                                            <h6 class="delete">Accept</h6>
                                                         </div>
                                                         
-                                                </div> 
-                                              </div>
+              
+                                                            <div class="img_Section" onclick="openModal('id1')">
+                                                                <img class="img_item" src="images/delete.png" alt="Delete"/>
+                                                                <h6 class="delete">Delete</h6>
+                                                            </div>
                                             </div>
                                           </div>
                                     </div>
