@@ -26,7 +26,7 @@
   $('#myModal').on('hide.bs.modal', function (e) {
     var formsElements = document.getElementsByClassName('tab-pane fade show active text-align form-new');
     if(formsElements[0].id == "admin"){
-        window.location.href = "https://github.com/dachepally/Sample01/admin.html";
+        window.location.href = "C:/Users/S533980/Desktop/Sample01/admin.html";
         
     }
     else{
