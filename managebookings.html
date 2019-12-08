@@ -4,148 +4,135 @@
       <meta charset="utf-8">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title >Admin Home</title>
+      <title >Manage Orders</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/Footer-with-logo.css">
       <link rel="stylesheet" href="css/common.css">
-      <link rel="stylesheet" href="css/admin.css">
-     
-  
-  
-  <link rel="stylesheet" href="css/user.css">
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="css/list.css">
+      <link rel="stylesheet" href="css/modal_success.css">
       <style>
-        .img_Section {
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        img.img_item {
-            width: 35px;
-            vertical-align: middle;
-        }
          
       </style>
       <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      <script>
-          function goToPage(pageName){
-            window.location.href = "https://dachepally.github.io/Sample01/"+pageName+".html?";
-          }
-      </script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <script src="js/managebooking.js"></script>
+
+
    </head>
    <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="admin.html">Ready For Ride</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="admin.html">Home </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="manageusers.html">Manage Users</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="paymentdelete.html">Manage Payments <span class="sr-only">(current)</span></a>
-                      </li>
-                    <li class="nav-item">
-                            <a class="nav-link " href="addcaradmin.html">Manage Cars</a>
-                      
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="advertisement.html">Manage Advertisement</a>
-                    </li>
-                  </ul>
-                  
-                  <a href="index.html"><span class="navbar-text">Signout</span> </a>
-                </div>
-              </nav>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="admin.html">Ride For Rental</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html">Home </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="manageusers.html">Manage Users</a>
+            </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="managebookings.html">Manage Payments <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+                  <a class="nav-link " href="addcaradmin.html"> Manage Cars</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="advertisement.html">Manage Advertisements</a>
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+        <a href="index.html"><span class="navbar-text">Signout</span> </a>
+      </div>
+    </nav>
               <div class="container-fluid">
                     <div class="container">
                             <div class="row">
                                 <div class="col-xs-4 offset-xs-4  col-md-8 offset-md-2">
                                     <div class="card">
                                         <div class="card-header">
-                                            <h4 class="head_text">Accept/Decline Bookings</h4>
+                                            <h4 class="head_text text-center">Booking Orders</h4>
                                         </div>
                                         <div class="gaadiex-list">
-                                            <div class="gaadiex-list-item" id="id1"><img class="gaadiex-list-item-img" src="images/car2.jpg" alt="Scorpia">
+                                            <div class="gaadiex-list-item" id="id1"><img class="gaadiex-list-item-img" src="images/carimage1.jpg" alt="List user">
                                               <div class="gaadiex-list-item-text">
-                                                <h5>Name : VSMDURGAPRASAD</h5>
-                                                <h5>Car-Type:- Scorpia-5 Seater</h5>
-                                                <h5>DateBooked - 11/11/2019</h5>
+                                                  <h5>BookingId : 660781</h5>
+                                                <h5>Car Name : Fortuner</h5>
+                                                <h5>PaymentType : CreditCard</h5>
+                                                <h6>Price : $50.00</h6>
                                                 <div class="date_Section">
-                                                  <h6 class="checkdate">From date : 03/11/2019</h6>
-                                                  <h6 class="checkdate">To date : 03/13/2019</h6>
-                                              </div>
-        
-                                                <h6 class="price"> Price - 79.99$</h6>
+                                                    <h6 class="checkdate">From date : 04/11/2019</h6>
+                                                    <h6 class="checkdate">To date : 04/13/2019</h6>
+                                                </div>
+                                                
+                                               
                                                 <div class="button_Section">
-                                                        <button type="submit" class="btn btn-primary approve" onclick="openModal('id1')">Accept</button>
+                                                        <button type="submit" class="btn btn-primary approve" onclick="openModal('id1')">Approve</button>
                                                         <button type="submit" class="btn btn-primary reject" onclick="openModal2('id1')">Decline</button>
                                                 </div>
                                               </div>
                                             </div>
-                                            <div class="gaadiex-list-item" id="id2"><img class="gaadiex-list-item-img" src="images/car6.jpg" alt="List user">
+                                            <div class="gaadiex-list-item" id="id2"><img class="gaadiex-list-item-img" src="images/carimage2.jpg" alt="List user">
                                               <div class="gaadiex-list-item-text">
-                                                    <h5>Name : VAMSI KRISHNA YELLAMANCHI</h5>
-                                                    <h5>Car-Type- Fortuner-7 Seater </h5>
-                                                    <h5>Date Booked- 04/10/2019</h5>
-                                                    <div class="date_Section">
+                                                  <h5>BookingId : 660788</h5>
+                                                  <h5>Car Name : Audi</h5>
+                                                  <h5>PaymentType : DebitCard</h5>
+                                                  <h6>Price : $70.00</h6>
+                                                  <div class="date_Section">
                                                       <h6 class="checkdate">From date : 04/11/2019</h6>
                                                       <h6 class="checkdate">To date : 04/13/2019</h6>
                                                   </div>
-                                                    <h6 class="price"> Price - 89.99$</h6>
-                                                    <div class="button_Section">
-                                                            <button type="submit" class="btn btn-primary approve" onclick="openModal('id2')">Accept</button>
-                                                            <button type="submit" class="btn btn-primary reject" onclick="openModal2('id2')"> Decline</button>
-                                                    </div>
+                                               
+                                                <div class="button_Section">
+                                                        <button type="submit" class="btn btn-primary approve" onclick="openModal('id2')">Approve</button>
+                                                        <button type="submit" class="btn btn-primary reject" onclick="openModal2('id2')">Decline</button>
+                                                </div>
                                               </div>
                                             </div>
-                                            <div class="gaadiex-list-item" id="id3"><img class="gaadiex-list-item-img" src="images/car6.jpg" alt="List user">
+                                            <div class="gaadiex-list-item" id="id3"><img class="gaadiex-list-item-img" src="images/carimage3.jpg" alt="List user">
                                               <div class="gaadiex-list-item-text">
-                                                    <h5>Name : RAVI VARMA DEVARAPALLY</h5>
-                                                    <h5>Car-Type Bollera-4 Seater</h5>
-                                                    <h5>Date Booked - 12/12/2019</h5>
-                                                    <div class="date_Section">
-                                                      <h6 class="checkdate">From date : 05/11/2019</h6>
-                                                      <h6 class="checkdate">To date : 05/13/2019</h6>
+                                                  <h5>BookingId : 660789</h5>
+                                                  <h5>Car Name : Benz</h5>
+                                                  <h5>PaymentType : CreditCard</h5>
+                                                  <h6>Price : $150.00</h6>
+                                                  <div class="date_Section">
+                                                      <h6 class="checkdate">From date : 04/11/2019</h6>
+                                                      <h6 class="checkdate">To date : 04/13/2019</h6>
                                                   </div>
-                                                    
-                                                    <h6 class="price"> Price - 159.99$</h6>
-                                                    <div class="button_Section">
-                                                            <button type="submit" class="btn btn-primary approve" onclick="openModal('id3')">Accept</button>
-                                                            <button type="submit" class="btn btn-primary reject" onclick="openModal2('id3')">Decline</button>
-                                                    </div>
+                                               
+                                                <div class="button_Section">
+                                                        <button type="submit" class="btn btn-primary approve" onclick="openModal('id3')">Approve</button>
+                                                        <button type="submit" class="btn btn-primary reject" onclick="openModal2('id3')">Decline</button>
+                                                </div>
                                               </div>
                                             </div>
-                                            <div class="gaadiex-list-item" id="id4"><img class="gaadiex-list-item-img" src="images/car4.jpg" alt="List user">
+                                            <div class="gaadiex-list-item" id="id4"><img class="gaadiex-list-item-img" src="images/carimage4.jpg" alt="List user">
                                               <div class="gaadiex-list-item-text">
-                                                    <h5>Name : POWERSTAR PAVAN KALYAN</h5>
-                                                    <h5>Car-Type- Benz-5 Seater</h5>
-                                                    <h5>Date Booked - 12/04/2019</h5>
-                                                    <div class="date_Section">
-                                                      <h6 class="checkdate">From date : 06/11/2019</h6>
-                                                      <h6 class="checkdate">To date : 06/13/2019</h6>
+                                                  <h5>BookingId : 660788</h5>
+                                                  <h5>Car Name : Fortuner</h5>
+                                                  <h5>PaymentType : DebitCard</h5>
+                                                  <h6>Price : $75.00</h6>
+                                                  <div class="date_Section">
+                                                      <h6 class="checkdate">From date : 04/11/2019</h6>
+                                                      <h6 class="checkdate">To date : 04/13/2019</h6>
                                                   </div>
-                                                    <h6 class="price"> Price - 79.99$</h6>
-                                                    <div class="button_Section">
-                                                            <button type="submit" class="btn btn-primary approve" onclick="openModal('id4')">Accept</button>
-                                                            <button type="submit" class="btn btn-primary reject" onclick="openModal2('id4')">Decline</button>
-                                                    </div>
+                                               
+                                                <div class="button_Section">
+                                                        <button type="submit" class="btn btn-primary approve" onclick="openModal('id4')">Approve</button>
+                                                        <button type="submit" class="btn btn-primary reject" onclick="openModal2('id4')">Decline</button>
+                                                </div>
                                               </div>
                                             </div>
-                                          </div>
-                                    </div>
                                 </div>
                                 
                                   
@@ -162,13 +149,15 @@
                         <div class="modal-dialog modal-confirm">
                            <div class="modal-content">
                               <div class="modal-header">
-                                 <div class="icon-box">
-                                    <i class="material-icons">&#xE876;</i>
-                                 </div>				
-                                 <h4 class="modal-title">Success!</h4>	
+                                 		
+                                 
                               </div>
                               <div class="modal-body">
-                                 <p class="text-center">Booking approved successfully</p>
+                                  <h4 class="modal-title text-center">Success!</h4>	
+                                  <br>
+                                  <br>
+                                  <p class="text-center">Confirmed</p> 
+                                 <p class="text-center">Request approved successfully</p>
                                  
                               </div>
                               <div class="modal-footer">
@@ -181,13 +170,13 @@
                       <div class="modal-dialog modal-confirm">
                          <div class="modal-content">
                             <div class="modal-header">
-                               <div class="icon-box">
-                                  <i class="material-icons">&#xE876;</i>
-                               </div>				
+                               		
                                <h4 class="modal-title">Success!</h4>	
                             </div>
                             <div class="modal-body">
-                               <p class="text-center">Booking rejected successfully</p>
+                              <p class="text-center">Declined</p> 
+                              <p class="text-center">Request Declined successfully</p>
+
                                
                             </div>
                             <div class="modal-footer">
@@ -196,49 +185,49 @@
                          </div>
                       </div>
                    </div>
-                      <footer id="myFooter">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h5>Get started</h5>
-                                        <ul>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Sign up</a></li>
-                                            <li><a href="#">Downloads</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <h5>About us</h5>
-                                        <ul>
-                                            <li><a href="#">Company Information</a></li>
-                                            <li><a href="#">Contact us</a></li>
-                                            <li><a href="#">Reviews</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <h5>Support</h5>
-                                        <ul>
-                                            <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Help desk</a></li>
-                                            <li><a href="#">Forums</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-3 info">
-                                        <h5>Information</h5>
-                                        <p>Online motel room booking helps user to book motels by selecting their favourite rooms through online.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="second-bar">
-                               <div class="container">
-                                    <h2 class="logo"><a href="#"> DreamSpot </a></h2>
-                                    <div class="social-icons">
-                                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </footer>
-        </body>
-    </html>
+                   </div>
+                   
+                   <footer id="myFooter">
+                    <div class="container">
+                       <div class="row">
+                          <div class="col-sm-3">
+                             <h5>Get started</h5>
+                             <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Sign up</a></li>
+                                <li><a href="#">Downloads</a></li>
+                             </ul>
+                          </div>
+                          <div class="col-sm-3">
+                             <h5>About us</h5>
+                             <ul>
+                                <li><a href="#">Company Information</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Reviews</a></li>
+                             </ul>
+                          </div>
+                          <div class="col-sm-3">
+                             <h5>Support</h5>
+                             <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Help desk</a></li>
+                                <li><a href="#">Forums</a></li>
+                             </ul>
+                
+                
+                
+                             
+                          </div>
+                          <div class="col-sm-3 info">
+                             <h5>Information</h5>
+                             <p>Online Car Rentalbooking helps the  user to book the cars  through online portal.</p>
+                          </div>
+                       </div>
+                    </div>
+                    
+                 </footer>
+                
+                </body>
+                </html>
+                
+                
