@@ -4,188 +4,162 @@
       <meta charset="utf-8">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title >ManageUsers</title>
+      <title >Manage Orders</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/Footer-with-logo.css">
       <link rel="stylesheet" href="css/common.css">
-      <link rel="stylesheet" href="css/admin.css">
-     
-  
-  
-  <link rel="stylesheet" href="css/user.css">
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="css/list.css">
+      <link rel="stylesheet" href="css/modal_success.css">
       <style>
-        .img_Section {
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        img.img_item {
-            width: 35px;
-            vertical-align: middle;
-        }
          
       </style>
       <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      <script>
-          function goToPage(pageName){
-            window.location.href = "https://dachepally.github.io/Sample01/"+pageName+".html?";
-          }
-      </script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <script src="js/managebooking.js"></script>
+
+
    </head>
    <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="admin.html">Ready For Ride</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="admin.html">Home </a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="manageusers.html">Manage Users</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="paymentdelete.html">Manage Payments <span class="sr-only">(current)</span></a>
-                      </li>
-                    <li class="nav-item">
-                            <a class="nav-link " href="managebookings.html">Manage Cars</a>
-                      
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="managerooms.html">Manage Advertisement</a>
-                    </li>
-                  </ul>
-                  
-                  <a href="index.html"><span class="navbar-text">Signout</span> </a>
-                </div>
-              </nav>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="admin.html">Ride For Rental</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html">Home </a>
+          </li>
+          <li class="nav-item active ">
+              <a class="nav-link" href="manageusers.html">Manage Users</a>
+            </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="paymentdelete.html">Manage Payments <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+                  <a class="nav-link " href="addcaradmin.html"> Manage Cars</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="advertisement.html">Manage Advertisements</a>
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+        <a href="index.html"><span class="navbar-text">Signout</span> </a>
+      </div>
+    </nav>
               <div class="container-fluid">
                     <div class="container">
                             <div class="row">
                                 <div class="col-xs-4 offset-xs-4  col-md-8 offset-md-2">
                                     <div class="card">
                                         <div class="card-header">
-                                            <h4 class="head_text">Manage Users</h4>
+                                            <h4 class="head_text text-center">User Requests</h4>
                                         </div>
                                         <div class="gaadiex-list">
-                                            <div class="gaadiex-list-item" id="id1">
+                                            <div class="gaadiex-list-item" id="id1"><img class="gaadiex-list-item-img" src="images/user.png" alt="List user">
                                               <div class="gaadiex-list-item-text">
-                                                <h5>Name : Durga Prasad</h5>
-                                                <h6>Email : durgaprasad@gmail.com</h6>
-                                                <h6>Phone : +166055280298</h6>
+                                                <h5>Name :VSMDURGAPRASAD</h5>
+                                                <h6>Email : dpyuvasena@gmail.com</h6>
+                                                <h6>Phone : +16605290298</h6>
                                                 <div class="date_Section">
-                                                    <div class="img_Section" onclick="openModal('id1')">
-                                                        <img class="img_item" src="images/accept1.jpg" alt="Delete"/>
-                                                        <h6 class="delete">Accept</h6>
-                                                    </div>
+                                                  <!-- <h5 class="price"> Price - 20.99$</h5>   -->
+                                                  <!-- <h5 class="checkdate">Delivery Time: <input type="text" placeholder="HH:MM"></input></h5> -->
                                                     
-          
-                                                        <div class="img_Section" onclick="openModal('id1')">
-                                                            <img class="img_item" src="images/delete.png" alt="Delete"/>
-                                                            <h6 class="delete">Delete</h6>
-                                                        </div>    
+                                                </div>
+                                               
+                                                <div class="button_Section">
+                                                        <button type="submit" class="btn btn-primary approve" onclick="openModal('id1')">Approve</button>
+                                                        <button type="submit" class="btn btn-primary reject" onclick="openModal2('id1')">Decline</button>
+                                                </div>
                                               </div>
                                             </div>
-                                            <div class="gaadiex-list-item" id="id2">
+                                            <div class="gaadiex-list-item" id="id2"><img class="gaadiex-list-item-img" src="images/user.png" alt="List user">
                                               <div class="gaadiex-list-item-text">
-                                                <h5>Name : VamseeKrishna</h5>
-                                                <h6>Email : vamseekrishna@gmail.com</h6>
-                                                <h6>Phone : +16605280298</h6>
+                                                <h5>Name :VAMSHIKRISHNA</h5>
+                                                <h6>Email : vamsee@gmail.com</h6>
+                                                <h6>Phone : +16605298762</h6>
                                                 <div class="date_Section">
-                                                    <div class="img_Section" onclick="openModal('id1')">
-                                                        <img class="img_item" src="images/accept1.jpg" alt="Delete"/>
-                                                        <h6 class="delete">Accept</h6>
-                                                    </div>
+                                                  <!-- <h5 class="price"> Price - 20.99$</h5>  
+                                                  <h5 class="checkdate">Delivery Time: <input type="text" placeholder="HH:MM"></input></h5> -->
                                                     
-          
-                                                        <div class="img_Section" onclick="openModal('id1')">
-                                                            <img class="img_item" src="images/delete.png" alt="Delete"/>
-                                                            <h6 class="delete">Delete</h6>
-                                                        </div>
+                                                    
+                                                </div>
+                                               
+                                                <div class="button_Section">
+                                                        <button type="submit" class="btn btn-primary approve" onclick="openModal('id2')">Approve</button>
+                                                        <button type="submit" class="btn btn-primary reject" onclick="openModal2('id2')">Decline</button>
+                                                </div>
                                               </div>
                                             </div>
-                                            <div class="gaadiex-list-item" id="id3">
+                                            <div class="gaadiex-list-item" id="id3"><img class="gaadiex-list-item-img" src="images/user.png" alt="List user">
                                               <div class="gaadiex-list-item-text">
-                                                <h5>Name : Ravi Varma Devarpally</h5>
-                                                <h6>Email : ravivarma@gmail.com</h6>
-                                                <h6>Phone : +16605280000</h6>
+                                                <h5>Name :Ravivarma</h5>
+                                                <h6>Email : rv@gmail.com</h6>
+                                                <h6>Phone : +16605298763</h6>
                                                 <div class="date_Section">
-                                                    <div class="img_Section" onclick="openModal('id1')">
-                                                        <img class="img_item" src="images/accept1.jpg" alt="Delete"/>
-                                                        <h6 class="delete">Accept</h6>
-                                                    </div>
+                                                  <!-- <h5 class="price"> Price - 20.99$</h5>  
+                                                  <h5 class="checkdate">Delivery Time: <input type="text" placeholder="HH:MM"></input></h5> -->
                                                     
-          
-                                                        <div class="img_Section" onclick="openModal('id1')">
-                                                            <img class="img_item" src="images/delete.png" alt="Delete"/>
-                                                            <h6 class="delete">Delete</h6>
-                                                        </div>
+                                                    
+                                                </div>
+                                               
+                                                <div class="button_Section">
+                                                        <button type="submit" class="btn btn-primary approve" onclick="openModal('id3')">Approve</button>
+                                                        <button type="submit" class="btn btn-primary reject" onclick="openModal2('id3')">Decline</button>
+                                                </div>
                                               </div>
                                             </div>
-                                            <div class="gaadiex-list-item" id="id4">
+                                            <div class="gaadiex-list-item" id="id4"><img class="gaadiex-list-item-img" src="images/user.png" alt="List user">
                                               <div class="gaadiex-list-item-text">
                                                 <h5>Name :Sai Sri</h5>
                                                 <h6>Email : saisri@gmail.com</h6>
                                                 <h6>Phone : +16605298763</h6>
                                                 <div class="date_Section">
-                                                    <div class="date_Section">
-                                                        <div class="img_Section" onclick="openModal('id1')">
-                                                            <img class="img_item" src="images/accept1.jpg" alt="Delete"/>
-                                                            <h6 class="delete">Accept</h6>
-                                                        </div>
-                                                        
-              
-                                                            <div class="img_Section" onclick="openModal('id1')">
-                                                                <img class="img_item" src="images/delete.png" alt="Delete"/>
-                                                                <h6 class="delete">Delete</h6>
-                                                            </div>
+                                                  <!-- <h5 class="price"> Price - 12.99$</h5>  
+                                                  <h5 class="checkdate">Delivery Time: <input type="text" placeholder="HH:MM"></input></h5> -->
+                                                    
+                                                    
+                                                </div>
+                                               
+                                                <div class="button_Section">
+                                                        <button type="submit" class="btn btn-primary approve" onclick="openModal('id4')">Approve</button>
+                                                        <button type="submit" class="btn btn-primary reject" onclick="openModal2('id4')">Decline</button>
+                                                </div>
+                                              </div>
                                             </div>
-                                          </div>
-                                    </div>
                                 </div>
+                                
+                                  
                                 </div>
+                            </div>
+                        <div class="col-xs-4 offset-xs-4  col-md-6 offset-md-3">
+                            <div class ="list_section" >
+
+                            </div>
                             </div>
                       </div>
-                      <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Confirm</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              Are you sure you want to delete this user?
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                              <button type="button" class="btn btn-primary" onclick="openModal2()">Delete</button>
-                            </div>
-                          </div>
-                        </div>
                       </div>
                       <div id="myModal" class="modal fade">
                         <div class="modal-dialog modal-confirm">
                            <div class="modal-content">
                               <div class="modal-header">
-                                 <div class="icon-box">
-                                    <i class="material-icons">&#xE876;</i>
-                                 </div>				
-                                 <h4 class="modal-title">Success!</h4>	
+                                 		
+                                 
                               </div>
                               <div class="modal-body">
-                                 <p class="text-center">User deleted successfully</p>
+                                  <h4 class="modal-title text-center">Success!</h4>	
+                                  <br>
+                                  <br>
+                                  <p class="text-center">Confirmed</p> 
+                                 <p class="text-center">Request approved successfully</p>
                                  
                               </div>
                               <div class="modal-footer">
@@ -194,49 +168,68 @@
                            </div>
                         </div>
                      </div>
-                      <footer id="myFooter">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6>Get started</h6>
-                                        <ul>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Sign up</a></li>
-                                            <li><a href="#">Downloads</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <h6>About us</h6>
-                                        <ul>
-                                            <li><a href="#">Company Information</a></li>
-                                            <li><a href="#">Contact us</a></li>
-                                            <li><a href="#">Reviews</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <h6>Support</h6>
-                                        <ul>
-                                            <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Help desk</a></li>
-                                            <li><a href="#">Forums</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-3 info">
-                                        <h6>Information</h6>
-                                        <p>Online motel room booking helps user to book motels by selecting their favourite rooms through online.</p>
-                                    </div>
-                                </div>
+                     <div id="myModal2" class="modal fade">
+                      <div class="modal-dialog modal-confirm">
+                         <div class="modal-content">
+                            <div class="modal-header">
+                               		
+                               <h4 class="modal-title">Success!</h4>	
                             </div>
-                            <div class="second-bar">
-                               <div class="container">
-                                    <h2 class="logo"><a href="#"> DreamSpot </a></h2>
-                                    <div class="social-icons">
-                                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-                                    </div>
-                                </div>
+                            <div class="modal-body">
+                              <p class="text-center">Declined</p> 
+                              <p class="text-center">Request Declined successfully</p>
+
+                               
                             </div>
-                        </footer>
-        </body>
-    </html>
+                            <div class="modal-footer">
+                               <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   </div>
+                   
+                   <footer id="myFooter">
+                    <div class="container">
+                       <div class="row">
+                          <div class="col-sm-3">
+                             <h5>Get started</h5>
+                             <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Sign up</a></li>
+                                <li><a href="#">Downloads</a></li>
+                             </ul>
+                          </div>
+                          <div class="col-sm-3">
+                             <h5>About us</h5>
+                             <ul>
+                                <li><a href="#">Company Information</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Reviews</a></li>
+                             </ul>
+                          </div>
+                          <div class="col-sm-3">
+                             <h5>Support</h5>
+                             <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Help desk</a></li>
+                                <li><a href="#">Forums</a></li>
+                             </ul>
+                
+                
+                
+                             
+                          </div>
+                          <div class="col-sm-3 info">
+                             <h5>Information</h5>
+                             <p>Online Car Rentalbooking helps the  user to book the cars  through online portal.</p>
+                          </div>
+                       </div>
+                    </div>
+                    
+                 </footer>
+                
+                </body>
+                </html>
+                
+                

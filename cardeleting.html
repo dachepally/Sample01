@@ -60,45 +60,22 @@
                                           <h5 class="card-title">CheverletCar</h5>
                                           <p class="card-text">This car is ood for long trips with good mileage </p>
                                           <p class="card-text"><small class="text-muted card_price">Price : 60.99$</small></p>
-                                          <input id="input-button"  class="btn btn-primary" onclick="myFunction()" type="submit" value="Book Car"/>
-                                          <!-- <a href="payment.html" class="btn btn-primary">BookCar</a> -->
+                                          <button onclick="myFunction()">Delete CAR</button>
                                         </div>
                                       </div>
 
-                                      <div class="card" >
-                                            <img class="card-img-top" src="images/car2.jpg" height="250px" alt="Card image cap">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Benz</h5>
-                                              <p class="card-text">This is a spots type car goes with more speed</p>
-                                              <p class="card-text" ><small class="text-muted card_price">Price : 80.99$</small></p>
-                                              <input id="input-button"  class="btn btn-primary" onclick="myFunction()" type="submit" value="Book Car"/>
-                                              <!-- <a href="payment.html" class="btn btn-primary">BookCar</a> -->
-                                            </div>
-                                          </div>
+                                      
 
-                                          <div class="card" >
-                                                <img class="card-img-top" src="images/car4.jpg" height="250px" alt="Card image cap">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Toyata</h5>
-                                                  <p class="card-text">This is a Family car to go for vacations</p>
-                                                  <p class="card-text"><small class="text-muted card_price">Price : 100.99$</small></p>
-                                                  <!-- <a href="payment.html" class="btn btn-primary">BookCar</a> -->
-                                                  <input id="input-button"  class="btn btn-primary" onclick="myFunction()" type="submit" value="Book Car"/>
-                                                </div>
-                                              </div>
-                                              <div class="card" >
-                                                <img class="card-img-top" src="images/car5.jpg" height="250px" alt="Card image cap">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Audi</h5>
-                                                  <p class="card-text">This is a Prestigious car go with friends </p>
-                                                  <p class="card-text"><small class="text-muted card_price">Price : 120.99$</small></p>
-                                                  <!-- <a href="payment.html" class="btn btn-primary">BookCar</a> -->
-                                                  <input id="input-button"  class="btn btn-primary" onclick="myFunction()" type="submit" value="Book Car"/>
-                                                </div>
-                                              </div>
+                                          
+                                              
                         </div>  
                 </div>
               </div>
+              <script>
+                function myFunction() {
+  alert("Car Has Been Deleted Successfully");
+}
+              </script>
               <footer id="myFooter">
                 <div class="container">
                    <div class="row">
@@ -138,16 +115,5 @@
                 </div>
                 
              </footer>
-             <script>
-                function myFunction() {
-    var txt;
-    if (confirm("Confirm This Booking")) {
-      location.href="payment.html"
-    } else {
-      location.href = "cartype.html";
-    }
-    
-  }
-             </script>
                      </body>
               </html>

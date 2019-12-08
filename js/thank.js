@@ -20,7 +20,7 @@
         
       });
       $('#myModal').on('hidden.bs.modal', function (e) {
-        window.location.href = "https://github.com/dachepally/Sample01/manageskills.html";
+        window.location.href = "C:/Users/s533980/Desktop/Sample01/thankyou.html";
     
   });
     }, false);
