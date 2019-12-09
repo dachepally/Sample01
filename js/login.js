@@ -30,7 +30,7 @@
         
     }
     else{
-        window.location.href = "https://dachepally.github.io/Sample01/user.html";
+        window.location.href = "https://dachepally.github.io/Sample01/calendar.html";
         
     }
   });

@@ -24,7 +24,7 @@
   })();
 
   $('#myModal').on('hide.bs.modal', function (e) {
-        window.location.href = "https://github.com/dachepally/Sample01/index.html";
+        window.location.href = "C:/Users/S533980/Desktop/Sample01/home.html";
        // window.location.href = "https://github.com/dachepally/Sample01/register.html";
     
   });
