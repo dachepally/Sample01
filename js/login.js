@@ -30,13 +30,13 @@
         
     }
     else{
-        window.location.href = "https://dachepally.github.io/Sample01/calendar.html";
+        window.location.href = "calendar.html";
         
     }
   });
 
   function goToRegister(){
-    window.location.href = "https://dachepally.github.io/Sample01/register.html";
+    window.location.href = "register.html";
     
   }
 
